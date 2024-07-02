@@ -46,12 +46,15 @@ header, section,
 }
 
 .profilePhoto {
-    width: 150px; 
-    height: 150px; 
+    width: 100%;
+    max-width: 150px; 
+    max-height: 150px; 
     border-radius: 50%; 
     object-fit: cover; 
     border: 2px solid #fff; 
     margin: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 .link:hover {
@@ -86,6 +89,21 @@ header, section,
 .projects img {
     display: block;
     margin: 20px;
+}
+
+.imageContainer {
+    width: 100%;
+    max-width: 500px; 
+    overflow: hidden;
+    text-align: center;
+    padding: 10px; 
+}
+
+.imageContainer img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
 }
 
 
