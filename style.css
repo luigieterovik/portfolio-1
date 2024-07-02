@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(270deg, #1e87f0, #b618f5);
+    background-size: 400% 400%;
+    animation: gradientAnimation 30s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.headerContent{
+    display: flex; 
+    justify-content: space-between;
+
+}
+
+header, section,
+.projects {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.profilePhoto {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #fff; 
+    margin: 20px;
+}
+
+.link:hover {
+    background-color: rgba(140, 94, 248, 0.884);
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    border: 10px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.projectTitle{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.projects img {
+    display: block;
+    margin: 20px;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    width: 180px;
+    height: 60px;
+}
+
+.clickable {
+    cursor: pointer;
+}
